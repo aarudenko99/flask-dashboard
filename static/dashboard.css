@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* fixed and fluid only on sm and up */
+@media (min-width: 768px) {
+    .left {
+        position:fixed;
+    }
+    .fixed {
+        min-height: 100vh;
+        min-width: 180px;
+        max-width: 180px
+    }
+    .col .fluid {
+       min-height: 100vh;
+    }
+    .flex-grow {
+       flex:1;
+    }
+    #topNav { width: calc(100vh-200px);
+    margin-left:200px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
